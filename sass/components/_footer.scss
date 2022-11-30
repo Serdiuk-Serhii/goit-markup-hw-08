@@ -1,0 +1,121 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: left;
+}
+.footer-item {
+  display: flex;
+}
+.footer-box {
+  margin-right: 70px;
+}
+.address-list {
+  list-style-type: none;
+}
+.address-list__item {
+  margin-bottom: 5px;
+
+  &:last-child {
+  margin-bottom: 0;
+}
+}
+
+.address-list__address {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-right: 18px;
+
+  color: var(--main-white-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+&:focus {
+  color: var(--main-blue-color);
+}
+}
+
+.address-list__contact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  display: flex;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+&:focus {
+  color: var(--main-blue-color);
+}
+}
+
+.social-box {
+  padding-top: 12px;
+  margin-right: 93px;
+}
+.footer-social {
+  margin-bottom: 20px;
+  list-style-type: none;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-white-color);
+}
+.social-list {
+  list-style-type: none;
+  display: flex;
+  text-align: left;
+}
+.social-list__item {
+  margin-right: 10px;
+}
+.social-list__item:last-child {
+  margin-right: 0;
+}
+.dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--main-white-color);
+}
+
+.subscription {
+  padding-top: 12px;
+}
+
+.subscription__text {
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.subscription__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  color: whitesmoke;
+
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
