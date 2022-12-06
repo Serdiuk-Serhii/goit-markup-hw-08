@@ -2,17 +2,56 @@
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width:1200px) {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  }
+  
 }
+
+
 .footer-item {
-  display: flex;
+  @media screen and (min-width:1200px) {
+    display: flex;
+  }
+  
 }
+
+.for-tablet {
+  @media screen and (min-width:768px) and (max-width:1199.98px) {
+  display: flex;
+  justify-content: space-around;
+  }
+
+  @media screen and (min-width:1200px) {
+    display: inline-flex;
+  }
+}
+
 .footer-box {
-  margin-right: 70px;
+
+  @media screen and (max-width:1199.98px) {
+    text-align: center;
+  }
+  
+
+  @media screen and (min-width:1200px) {
+    margin-right: 89px;
+  }
+  // outline: 1px solid tomato;
 }
 .address-list {
+  display: flex;
+  flex-direction: column;
+  
+  
   list-style-type: none;
+
+  @media screen and (max-width:1199.98px) {
+    margin-bottom: 60px;
+    align-items: center;
+  }
 }
 .address-list__item {
   margin-bottom: 5px;
@@ -23,12 +62,13 @@
 }
 
 .address-list__address {
+
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-right: 18px;
+  
 
   color: var(--main-white-color);
 
@@ -40,15 +80,21 @@
 &:focus {
   color: var(--main-blue-color);
 }
+
+@media screen and (min-width:1200px) {
+  // padding-right: 18px;
+}
 }
 
 .address-list__contact {
+  display: flex;
+  
   font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  display: flex;
+  
 
   color: rgba(255, 255, 255, 0.6);
 
@@ -59,8 +105,18 @@
 }
 
 .social-box {
-  padding-top: 12px;
+  text-align: center;
+  
+  @media screen and (max-width:1199.98px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding-top: 12px;
   margin-right: 93px;
+  }
+
+  // outline: 1px solid tomato;
 }
 .footer-social {
   margin-bottom: 20px;
@@ -77,7 +133,12 @@
 .social-list {
   list-style-type: none;
   display: flex;
-  text-align: left;
+  
+  justify-content: center;
+
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 }
 .social-list__item {
   margin-right: 10px;
@@ -92,7 +153,22 @@
 }
 
 .subscription {
+  
   padding-top: 12px;
+
+  @media screen and (max-width:1199.98px) {
+    text-align: center;
+  }
+}
+
+.subscription__form {
+  display: flex;
+
+  @media screen and (min-width:480px) and (max-width:1199.98px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .subscription__text {
@@ -111,6 +187,8 @@
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
+
+  margin-bottom: 20px;
 
   color: whitesmoke;
 
