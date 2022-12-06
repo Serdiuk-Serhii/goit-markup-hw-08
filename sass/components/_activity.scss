@@ -1,5 +1,9 @@
 .activity {
   background: var(--main-white-color);
+
+  @media screen and (max-width:1199px) {
+    display: none;
+  }
 }
 .activity__list {
   list-style-type: none;

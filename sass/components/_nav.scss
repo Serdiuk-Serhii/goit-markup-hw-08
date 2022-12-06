@@ -1,12 +1,18 @@
 .main-nav {
   display: flex;
+  // justify-content: space-between;
   align-items: center;
 }
 
 .nav__list {
+  display: none;
   list-style-type: none;
-  display: flex;
   padding: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 38px;
+  }
 }
 .nav__item {
   position: relative;
@@ -18,7 +24,7 @@
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16/14);
   letter-spacing: 0.02em;
 
   color: var(--main-text-color);

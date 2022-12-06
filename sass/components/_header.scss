@@ -1,19 +1,49 @@
 .header {
+  // position: relative;
   background: var(--main-white-color);
-  border-bottom: 1px solid;
-  border-color: #ececec;
+
+  @media screen and (max-width:767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width:768px) {
+    border-bottom: 1px solid;
+    border-color: #ececec;
+    // padding-top: 26px;
+    // padding-bottom: 26px;
+  }
+
+  // outline: 1px solid tomato;
 }
 
-.header__mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.contacts {
+  display: none;
+  width: fit-content;
   margin-left: auto;
 
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;  
+  }
+  
+
+}
+.header__mail {
+  display: flex;
+  
+  // justify-content: center;
+  align-items: center;
+  
+
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14/12);
   letter-spacing: 0.02em;
 
   color: var(--p-text-color);
@@ -21,6 +51,16 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width:1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:hover,
   &:focus {
@@ -29,11 +69,12 @@
 }
 
 .header__tel {
-  margin-left: 50px;
-
+  display: flex;
+  align-items: center;
+  
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14/12);
   letter-spacing: 0.02em;
 
   color: var(--p-text-color);
@@ -41,6 +82,15 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // margin-left: auto;
+  
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
     &:hover,
     &:focus {

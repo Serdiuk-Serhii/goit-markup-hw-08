@@ -4,17 +4,25 @@
 .clients__list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 .clients__item {
-  margin-right: 30px;
 
-  &:last-child {
-  margin-right: 0;
-}
+  @media screen and (max-width:1199px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  
 }
 
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   padding: 16px 32px;
   display: flex;
@@ -28,6 +36,14 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width:768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 170px;
+  }
 
   &:hover,
 &:focus {

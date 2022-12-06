@@ -1,6 +1,11 @@
 .section {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  /* outline: 2px solid tomato; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  outline: 1px solid tomato;
+
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
