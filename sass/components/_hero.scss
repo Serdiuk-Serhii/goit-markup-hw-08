@@ -47,21 +47,21 @@
   }
 
     @media screen and (min-width: 769px) {
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-      url('../images/hero/img_l@1x.jpg');
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url('../images/hero/img_l@1x.jpg');
 
-    @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)), url('../images/hero/img_l@2x.jpg');
-  }
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)), url('../images/hero/img_l@2x.jpg');
+      }
   }
 
 
@@ -85,8 +85,8 @@
   color: var(--main-white-color);
 
   @media screen and (min-width: 1200px) {
-  font-size: 44px;
-  line-height: calc(60/44);
+    font-size: 44px;
+    line-height: calc(60/44);
   }
 }
 .hero__btn {
@@ -115,8 +115,8 @@
 
     &:hover,
     &:focus {
-  color: var(--main-white-color);
-  background: #188ce8;
-  cursor: pointer;
-}
+      color: var(--main-white-color);
+      background: #188ce8;
+      cursor: pointer;
+    }
 }
