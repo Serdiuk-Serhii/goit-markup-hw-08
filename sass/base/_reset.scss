@@ -28,5 +28,9 @@ img {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (min-width:$tablet_width) and (max-width:1199.98px) {
+    gap: 30px;
+  }
 }
 

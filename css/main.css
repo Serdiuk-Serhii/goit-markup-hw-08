@@ -306,6 +306,11 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .list {
+    gap: 30px;
+  }
+}
 
 .section {
   display: -webkit-box;
