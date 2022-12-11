@@ -1,6 +1,7 @@
 .features {
   background: var(--main-white-color);
-  padding-bottom: 0;
+  padding-bottom: 60px;
+
 }
 
 .features__list {
@@ -14,7 +15,6 @@
   
 }
 .features__icon {
-  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   display: flex;
@@ -33,7 +33,6 @@
   }
 }
 .features__item {
-  width: 450px;
   margin-bottom: 30px;
 
   &:last-child {
@@ -68,11 +67,6 @@
   @media screen and (max-width:767px) {
     text-align: center;
   }
-
-  // @media screen and (min-width:1200px) {
-  //   font-size: 14px;
-  // line-height: 1.14;
-  // }
 }
 .features__text {
   font-size: 14px;

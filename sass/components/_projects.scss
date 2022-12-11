@@ -1,8 +1,4 @@
 .list__item-pro {
-  width: 450px;
-  margin-bottom: 30px;
-
-  border: 1px solid #eeeeee;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -10,18 +6,20 @@
 
   &:last-child {
   margin-bottom: 0;
-}
+  }
+
+@media screen and (max-width:767.98px) {
+    margin-bottom: 30px;
+  }  
 
 @media screen and (min-width:$tablet_width) {
-  width: 354px;
+  width: calc((100% - 30px)/2);
 }
 
 @media screen and (min-width:1200px) {
-  width: 370px;
+  width: calc((100% - 2*30px)/3);
   margin-right: 30px;
   margin-bottom: 30px;
-
-  border: 1px solid #eeeeee;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -44,5 +42,10 @@
 }
 }
 
+.card__sign {
+  border-bottom: 1px solid #eeeeee; 
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
 
 

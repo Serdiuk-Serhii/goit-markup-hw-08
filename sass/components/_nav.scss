@@ -44,7 +44,9 @@
 }
 }
 
-
+.current {
+  color: var(--main-blue-color);
+}
 
 .current::after {
   position: absolute;
