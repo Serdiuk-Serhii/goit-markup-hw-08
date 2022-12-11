@@ -1025,7 +1025,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .clients__link {
-    width: 170px;
+    width: 100%;
   }
 }
 .clients__link:hover, .clients__link:focus {
